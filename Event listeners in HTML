@@ -1,0 +1,40 @@
+1. onclick and ondblclick: In this case the eventhandler listens to a “click” event. If any user clicks on the web page, this event listener will get triggered and will show an alert.
+
+Eg:
+<html>
+<body>
+<button name="test_button" onclick="alert('clicked!')" ondblclick="alert('double clicked!')">Click me!</button>
+</body>
+</html>
+
+2. Iframe onload: Another very common event listener is ‘onload’, which simply gets triggered when some element (image, body, iframe, video etc. has finished loading.
+
+Eg:
+<html>
+<body>
+<iframe src="https://ipchicken.com" onload="alert('lo')"></iframe>
+</body>
+</html>
+
+3. Image onerror: In this event listener, the src attribute in the img tag looks for the file given in the URL. But, if the url raises an error and cannot be accessed, we can have an onerror event listener to display an appropriate message to the user.
+
+Eg:
+<html>
+<body>
+<p>
+
+Example of onerror event:
+</p>
+<img src="x" onerror="alert('No image found');">   
+</body>
+</html>
+
+4. Using getElementById method: Here, we ask the user to input her name using <input> tag. Then we access this input using the getElementById method, and add a “Hi”, to it. Then we display it on the alert box. This alert is displayed when the user clicks on the button after giving the input.
+
+Eg:
+<html>
+<body>
+<input type="text" placeholder="Enter your name" id="textfield1">
+<button onclick="alert('Hi '+document.getElementById('textfield1').value)">Click Me</button>
+</body>
+</html>
